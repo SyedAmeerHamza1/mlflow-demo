@@ -7,6 +7,11 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import dagshub
+dagshub.init(repo_owner='SyedAmeerHamza1', repo_name='mlflow_center_repo_demo', mlflow=True)
+
+mlflow.set_registry_uri("https://dagshub.com/SyedAmeerHamza1/mlflow_center_repo_demo.mlflow")
+
 
 
 
