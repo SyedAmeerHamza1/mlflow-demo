@@ -34,10 +34,10 @@ n_estimators= 50
 
 # Applying MLFlow
 
-mlflow.set_experiment("iris-dt")
+mlflow.set_experiment("iris-rfc-dt")
 
 
-with mlflow.start_run(run_name="new run5", experiment_id='435664341241085501'):
+with mlflow.start_run():
     rf= RandomForestClassifier(max_depth=max_depth, n_estimators=n_estimators)
 
     rf.fit(x_train, y_train)
